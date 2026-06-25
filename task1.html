@@ -1,0 +1,116 @@
+Skip to content
+Navyachengole
+SCT_WD_01
+Repository navigation
+Code
+Issues
+Pull requests
+Agents
+Actions
+Projects
+Wiki
+Security and quality
+Insights
+Settings
+Commit d62808a
+Navyachengole
+Navyachengole
+authored
+last month
+Verified
+Create task-1
+main
+1 parent 
+f68ae3b
+ commit 
+d62808a
+1 file changed
+
++82
+Lines changed: 82 additions & 0 deletions
+File tree
+Filter files…
+task-1
+Search within code
+ 
+‎task-1‎
++82
+Lines changed: 82 additions & 0 deletions
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Navbar</title>
+  <style>
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 15px 0;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+nav.scrolled {
+      background-color: #111;
+    }
+        nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #4CAF50;
+    }
+    body {
+      margin: 0;
+      padding-top: 60px;
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Welcome</h1>
+    <p>Scroll down to see navbar color change...</p>
+     <div style="height: 1500px;"></div>
+  </main>
+  <script>
+    window.addEventListener("scroll", function() {
+      let navbar = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+</body>
+</html>
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
+
